@@ -1,4 +1,4 @@
-# 💼 Job Market Analysis Power BI Project
+# 💼 Job Market Analysis SQL and Power BI Project
 
 This project presents a comprehensive **Job Market Analysis Dashboard** built using **Microsoft Power BI**.  
 The dashboard provides insights into job availability, salary distribution, employment types, and hiring trends across different platforms.
@@ -35,6 +35,8 @@ The dashboard provides insights into job availability, salary distribution, empl
 | **Visualization Types** | Bar Chart, Line Chart, Donut Chart, Table, KPI Cards |
 
 ---
+## 📊 Dashboard Preview
+![Job Market Analysis Dashboard](https://github.com/DinakarShetty/Job-Market-Analysis/blob/main/Project%20Job%20analysis.jpg)
 
 ## ⚙️ Data Modeling & DAX Examples
 
@@ -44,7 +46,7 @@ The dashboard provides insights into job availability, salary distribution, empl
 - Added calculated columns for `SalaryTier` (Low, Medium, High).
 
 ### DAX Measures
-```DAX
+DAX
 Average Salary = AVERAGE(JOBS_DATA[salary_standardized])
 
 High Salary % =
@@ -58,6 +60,7 @@ CALCULATE(
     AVERAGE(JOBS_DATA[salary_standardized]),
     ALLEXCEPT(JOBS_DATA, JOBS_DATA[salary_rate])
 )
+
 
 🧑‍💻 Author
 
